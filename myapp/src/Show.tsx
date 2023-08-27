@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 type Ishow ={
     id:number;
-    image:string;
+   image:string;
 }
 
 export default function Show() {
@@ -17,15 +17,21 @@ export default function Show() {
     },[]);
 
   return (
-<>
+    <>
+    <h1 className="text-center text-4xl my-20 mx-auto  bg-slate-950 w-fit text-white">The Rick and Morty API</h1>
+<div className='flex flex-wrap justify-center items-center gap-5'> 
 
 {show.map((item,id)=>(
-<div key={id}>
-    <Link to={`details/${item.id}`}>
-<img src={item.image} alt="" />
+<div className='' key={id}>
+  
+    <Link to={`/ShowD/${item.id}`}>
+<img src={item.image} alt=""/>
 </Link>
+
 </div>
 ))}
+
+</div>
 </>
    
   )

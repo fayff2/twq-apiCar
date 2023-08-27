@@ -1,8 +1,8 @@
 
 import './App.css'
-import {Routes , Route} from 'react-router-dom'
-import Show from './Show'
-import ShowD from './ShowD'
+import {Routes , Route} from 'react-router-dom';
+import Show from './Show';
+import ShowD from './ShowD';
 
 function App() {
 
@@ -12,7 +12,7 @@ function App() {
 
      <Routes>
       <Route path='/' element={<Show/>}></Route>
-      <Route path='details/:Id' element={<ShowD/>}></Route>
+      <Route path='/ShowD/:id' element={<ShowD/>}></Route>
      </Routes>
     </>
   )
